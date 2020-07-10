@@ -1,6 +1,5 @@
 package com.jiaozi.reader;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -11,7 +10,11 @@ import java.io.IOException;
  **/
 public class Demo1 {
     public static void main(String[] args) throws IOException {
-        FileReader fileReader = new FileReader("demo1.txt");
+        FileReader fileReader = new FileReader("test.txt");
+        int b;
+        while ((b=fileReader.read())!=-1){
+            System.out.println((char)b);
+        }
         int len = fileReader.read();
         System.out.println((char)len);
         fileReader.close();
