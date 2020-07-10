@@ -1,4 +1,4 @@
-package com.jiaozi.inputStream;
+package com.jiaozi.outputstream;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
